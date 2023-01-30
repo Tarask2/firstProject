@@ -10,9 +10,20 @@ public class Main {
         int number1 = scanner.nextInt();
         System.out.println("Writte second number :");
         int number2 = scanner.nextInt();
-        System.out.println("Max number: " + Math.max(number1, number2));
-        System.out.println("Min number: " + Math.min(number1, number2));
 
+        if (number1 > number2) {
+            System.out.println("Max: " + number1);
+        } else {
+            System.out.println("Max: " + number2);
+        }
+        System.out.println();
+        System.out.println("-----------------------------------------");
+
+        if (number1 < number2) {
+            System.out.println("Min: " + number1);
+        } else {
+            System.out.println("Min: " + number2);
+        }
         System.out.println();
         System.out.println("-----------------------------------------");
 
@@ -25,3 +36,4 @@ public class Main {
         }
     }
 }
+
