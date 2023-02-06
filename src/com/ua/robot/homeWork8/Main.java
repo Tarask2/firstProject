@@ -6,10 +6,11 @@ public class Main {
     public static void main(String[] args) {
         int[] arr = new int[10];
         randomArr(arr);
-        min(arr, 10);
-        max(arr, 10);
+        min(arr);
+        max(arr);
         avarege(arr);
         sum(arr);
+
     }
 
     // 1.Створити програму в якій потрібно створити масив з 10 елементів та заповнити його випадковими числами
@@ -25,8 +26,8 @@ public class Main {
     }
 
     // 3.Знайти мінімальне значення
-    public static void min(int[] array, int minNumber) {
-        minNumber = array[0];
+    public static void min(int[] array) {
+        int minNumber = array[0];
         for (int i = 1; i < array.length; i++) {
             if (array[i] < minNumber) {
                 minNumber = array[i];
@@ -37,7 +38,8 @@ public class Main {
     }
 
     // 4.Знайти максимальне значення
-    public static void max(int[] arr, int maxNumber) {
+    public static void max(int[] arr) {
+        int maxNumber = arr[0];
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] > maxNumber) {
                 maxNumber = arr[i];
@@ -65,6 +67,7 @@ public class Main {
         for (int i = 0; i < arr.length; i++) {
             sum += arr[i];
         }
+
         System.out.println("Sum all elements: " + sum);
 
     }
