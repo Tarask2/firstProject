@@ -11,7 +11,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(returnCube(2));
+        returnCube(2);
         System.out.println("-------------------------------");
         Scanner scanner = new Scanner(System.in);
         System.out.println("How many times to enter an star: ");
@@ -22,10 +22,9 @@ public class Main {
         doubleSymbol(scanner.nextInt(), '#');
     }
 
-    public static int returnCube(int number) {
-        int cube = 0;
-        return cube = number * number * number;
-
+    public static void returnCube(int number) {
+        int i = number * number * number;
+        System.out.println("Cube of the given number: " + i);
     }
 
     public static void star(int scan, char symbol) {
