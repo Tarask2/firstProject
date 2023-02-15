@@ -38,6 +38,7 @@ public class LightWeightCar extends Car {
         this.year = year;
     }
 
+    @Override
     public String whatTypeOfCar() {
         return "LightCar";
     }

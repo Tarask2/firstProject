@@ -37,6 +37,7 @@ public class Truck extends Car {
         this.weigthCarry = weigthCarry;
     }
 
+    @Override
     public String whatTypeOfCar() {
         return "Truck";
     }
