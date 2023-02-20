@@ -37,7 +37,7 @@ public class Car {
         this.horsePower = horsePower;
     }
 
-    public String whatTypeOfCar() {
+    public  String whatTypeOfCar() {
         return "";
     }
 
