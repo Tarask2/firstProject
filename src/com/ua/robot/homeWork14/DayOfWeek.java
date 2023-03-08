@@ -16,10 +16,6 @@ public enum DayOfWeek {
         this.priority = priority;
     }
 
-    public int getPriority() {
-        return priority;
-    }
-
     public DayOfWeek[] returnDayOfWeek(int priority) {
 
 
@@ -46,7 +42,7 @@ public enum DayOfWeek {
                 System.out.println(SUNDAY);
                 break;
             default:
-                System.out.println("Day is none");
+                System.out.println("None Day");
         }
         return DayOfWeek.values();
     }
