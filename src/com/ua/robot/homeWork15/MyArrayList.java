@@ -1,9 +1,11 @@
 package com.ua.robot.homeWork15;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
 
 public class MyArrayList<E> {
 
+ArrayList <String> arrayList = new ArrayList<>();
     private Object[] values;
     private int size;
     private final static int DEFAULT_SIZE = 10;
