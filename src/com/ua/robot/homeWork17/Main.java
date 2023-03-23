@@ -19,6 +19,8 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Впишіть слово: ");
         String word = scanner.nextLine().toLowerCase();
+
+
         System.out.println(ukrMap.get(word));
     }
 }
