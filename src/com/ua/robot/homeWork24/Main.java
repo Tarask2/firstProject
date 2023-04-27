@@ -7,7 +7,7 @@ public class Main {
         Thread thread_1 = new Thread(tn);
         Thread thread_2 = new Thread(tn);
         thread_1.setName("Thread-1");
-        thread_1.setName("Thread-2");
+        thread_2.setName("Thread-2");
 
 
         thread_1.start();
