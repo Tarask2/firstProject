@@ -1,7 +1,7 @@
 package com.ua.robot.homeWork24;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
         ThreadNumber tn = new ThreadNumber();
         Thread thread_1 = new Thread(tn);
