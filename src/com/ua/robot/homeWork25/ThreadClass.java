@@ -2,12 +2,17 @@ package com.ua.robot.homeWork25;
 
 
 public class ThreadClass implements Runnable {
+    Thread thread;
+
 
     @Override
     synchronized public void run() {
         while (true) {
 
             for (int i = 0; i <= 10; i++) {
+                if (i == 5) {
+                    thread.interrupt();
+                }
 
                 try {
                     Thread.sleep(1000);
@@ -15,20 +20,12 @@ public class ThreadClass implements Runnable {
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-                if (i == 5) {
-                    try {
-                        wait();
-                    } catch (InterruptedException e) {
-                        throw new RuntimeException(e);
-                    }
 
-
-                }
 
                 System.out.println(Thread.currentThread().getName() + " " + i);
-                }
-
-
             }
+
+
         }
     }
+}
