@@ -16,6 +16,7 @@ public class Main {
             for (Future<Integer> future : futures) {
                 System.out.println(future.get());
             }
+            executorService.shutdown();
 
         }
 
