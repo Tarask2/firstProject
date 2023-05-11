@@ -1,4 +1,4 @@
-package com.ua.robot.homeWork25;
+package com.ua.robot.homeWork24;
 
 class MyThread implements Runnable {
     private volatile boolean exit = false;
