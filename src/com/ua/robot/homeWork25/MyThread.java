@@ -1,4 +1,6 @@
-package com.ua.robot.homeWork24;
+package com.ua.robot.homeWork25;
+
+
 
 class MyThread implements Runnable {
     private volatile boolean exit = false;
@@ -19,7 +21,7 @@ class MyThread implements Runnable {
             }
 
         }
-        System.out.println("The user thread is now stopped");
+        System.out.println("The  thread is now stopped");
     }
 
 }
